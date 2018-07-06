@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Timeless Arts - an under-construction thing</title>
+  
+  
+  
+  
+      <style>
+      :root {
+  font-family: "Roboto", system-ui, sans-serif;
+  font-size: 10px;
+  background: #0A3DA7 linear-gradient(45deg, #0A3DA7, #0080EC);
+  color: #212121;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+a {
+  position: relative;
+  color: #075CC6;
+  text-decoration: none;
+}
+a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  border-top: 2px solid currentcolor;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  transition: cubic-bezier(0.92, 0.32, 0.42, 1) 300ms transform;
+}
+a:hover::before {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.card {
+  padding: 34px 24px;
+  border-radius: .4rem;
+  background: white;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.construction {
+  display: grid;
+  max-width: 400px;
+}
+.construction__headline {
+  margin-top: 0;
+  font-weight: 400;
+}
+.construction__company {
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 3.2;
+  text-align: center;
+  color: #FFF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.construction__company::after {
+  content: '';
+  position: absolute;
+  bottom: 1.6rem;
+  width: 32px;
+  height: 4px;
+  background: #FFF;
+  border-radius: 4px;
+}
+
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  <div class='construction'>
+  <div class='construction__company'>Timeless Arts</div>
+  <div class='card'>
+    <h1 class='construction__headline'>Happy to see you here!</h1>
+    <p>We're currently in a organization process, but shortly you will find really awesome stuff here!</p>
+    <p>
+      <a href='mailto:_@timelessarts.de'>Contact us</a>
+       if you are interested in more details.
+    </p>
+  </div>
+</div>
+  
+  
+  
+  
+  
+
+</body>
+
+</html>
+ 
